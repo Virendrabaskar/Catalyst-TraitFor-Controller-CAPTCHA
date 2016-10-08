@@ -7,7 +7,7 @@ use namespace::autoclean;
 use GD::SecurityImage;
 use HTTP::Date;
 
-our $VERSION = '1.1';
+our $VERSION = '1.2';
 
 use MRO::Compat;
 
@@ -69,7 +69,7 @@ Catalyst::TraitFor::Controller::CAPTCHA - authenticate human by create and valid
 
 =head1 VERSION
 
-version 1.1
+version 1.2
 
 =head1 SYNOPSIS
 

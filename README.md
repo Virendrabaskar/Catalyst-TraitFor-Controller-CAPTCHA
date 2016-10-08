@@ -4,7 +4,7 @@ Catalyst::TraitFor::Controller::CAPTCHA - authenticate human by create and valid
 
 # VERSION
 
-version 1.1
+version 1.2
 
 # SYNOPSIS
 

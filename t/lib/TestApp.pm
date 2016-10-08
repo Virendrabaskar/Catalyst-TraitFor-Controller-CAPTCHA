@@ -6,7 +6,7 @@ use Catalyst::Runtime 5.80;
 
 use Catalyst qw/
     Session
-    Session::Store::FastMmap
+    Session::Store::Dummy
     Session::State::Cookie
     /;
 
