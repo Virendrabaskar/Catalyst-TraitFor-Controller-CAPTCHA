@@ -1,7 +1,5 @@
-
 use strict;
 use warnings;
-
 use ExtUtils::MakeMaker 6.30;
 
 
@@ -11,6 +9,7 @@ my %WriteMakefileArgs = (
   "BUILD_REQUIRES" => {
     "Catalyst" => 0,
     "Catalyst::Controller" => 0,
+    "Catalyst::Plugin::Session" => 0,
     "Catalyst::Runtime" => "5.80",
     "GD::SecurityImage" => 0,
     "FindBin" => 0,
@@ -32,10 +31,10 @@ my %WriteMakefileArgs = (
     "MooseX::MethodAttributes::Role" => 0,
     "namespace::autoclean" => 0
   },
-  "VERSION" => "1.0",
+  "VERSION" => "1.1",
   "test" => {
     "TESTS" => "t/*.t"
-  },
+  }
 );
 
 
@@ -55,18 +54,8 @@ unless ( eval { ExtUtils::MakeMaker->VERSION(6.56) } ) {
 delete $WriteMakefileArgs{CONFIGURE_REQUIRES}
   unless eval { ExtUtils::MakeMaker->VERSION(6.52) };
 
-$ExtUtils::MakeMaker::VERSION > 6.46 and $WriteMakefileArgs{META_MERGE} = {
-        'meta-spec' => { version => 2 },
-        'resources' => {
-                'repository'  => {
-                        type => 'git',
-                        url => 'https://github.com/Virendrabaskar/Catalyst-TraitFor-Controller-CAPTCHA.git',
-                        web => 'https://github.com/Virendrabaskar/Catalyst-TraitFor-Controller-CAPTCHA'
-                }
-        }
-};
+  WriteMakefile(%WriteMakefileArgs);
 
-WriteMakefile(%WriteMakefileArgs);
 
 
 

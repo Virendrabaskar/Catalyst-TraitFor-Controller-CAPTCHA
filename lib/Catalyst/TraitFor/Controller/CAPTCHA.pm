@@ -7,7 +7,7 @@ use namespace::autoclean;
 use GD::SecurityImage;
 use HTTP::Date;
 
-our $VERSION = '1.0';
+our $VERSION = '1.1';
 
 use MRO::Compat;
 
@@ -69,7 +69,7 @@ Catalyst::TraitFor::Controller::CAPTCHA - authenticate human by create and valid
 
 =head1 VERSION
 
-version 1.0
+version 1.1
 
 =head1 SYNOPSIS
 
@@ -136,6 +136,7 @@ This controller's private methods will create and validate captcha.This module i
 =head3 generate_captcha : Private
 
 This will create and respond the captcha.
+ 
  $c->forward('generate_captcha');
 
 =head3 validate_captcha : Private
@@ -145,6 +146,10 @@ This will validate the given string  against the Captcha image that has been gen
  if ( $c->forward('validate_captcha',[$posted_string]) ) {
    #do something based on the CAPTCHA passing
  }
+
+=head1 REPOSITORY
+
+L<https://github.com/Virendrabaskar/Catalyst-TraitFor-Controller-CAPTCHA>
 
 =head1 SEE ALSO
 
@@ -178,7 +183,7 @@ Baskar Nallathambi <baskarmusiri@gmail.com>,<baskar@exceleron.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This is free software; you can redistribute it and/or modify it under
+This is free module.You can do anything to this module under
 the same terms as the Perl 5 programming language system itself.
 
 =cut

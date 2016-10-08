@@ -4,7 +4,7 @@ Catalyst::TraitFor::Controller::CAPTCHA - authenticate human by create and valid
 
 # VERSION
 
-version 1.0
+version 1.1
 
 # SYNOPSIS
 
@@ -70,7 +70,9 @@ This controller's private methods will create and validate captcha.This module i
 ### generate\_captcha : Private
 
 This will create and respond the captcha.
- $c->forward('generate\_captcha');
+ 
+
+    $c->forward('generate_captcha');
 
 ### validate\_captcha : Private
 
@@ -98,5 +100,5 @@ Baskar Nallathambi <baskarmusiri@gmail.com>,<baskar@exceleron.com>
 
 # COPYRIGHT AND LICENSE
 
-This is free software; you can redistribute it and/or modify it under
+This is free module.You can do anything to this module under
 the same terms as the Perl 5 programming language system itself.

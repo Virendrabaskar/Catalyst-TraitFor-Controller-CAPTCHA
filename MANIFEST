@@ -1,12 +1,14 @@
+Changes
+dist.ini
+lib/Catalyst/TraitFor/Controller/CAPTCHA.pm
 LICENSE
+Makefile.PL
 MANIFEST
 META.json
 META.yml
-Makefile.PL
 README
+README.md
 README.pod
-dist.ini
-lib/Catalyst/TraitFor/Controller/CAPTCHA.pm
 t/00-load.t
 t/lib/TestApp.pm
 t/lib/TestApp/Controller/Root.pm
